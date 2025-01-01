@@ -11,10 +11,4 @@ export const config = {
       : process.env.ENV === "staging"
       ? "https://staging-api.valuesdao.io"
       : "http://localhost:3000",
-  mongoDBUri:
-    process.env.ENV === "prod"
-      ? process.env.PROD_MONGODB_URI
-      : process.env.ENV === "staging"
-      ? process.env.STAGING_MONGODB_URI
-      : process.env.STAGING_MONGODB_URI,
 };
