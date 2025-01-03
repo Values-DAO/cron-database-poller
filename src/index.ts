@@ -42,4 +42,6 @@ const callBotService = async () => {
 }
 
 // Run the cron job every 5 minutes
-cron.schedule('*/5 * * * *', callBotService);
+cron.schedule('*/2 * * * *', callBotService);
+
+// callBotService();
